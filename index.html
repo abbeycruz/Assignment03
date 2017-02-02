@@ -1,187 +1,92 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
-    <title>My Bio</title>
-    <style>
-            * {
-                margin: 0;
-                padding: 0;
-            }
-            html, body {
-                height:100%;
-            }
-            body {
-                min-height:100%;
-                display:flex;
-                flex-direction:column;
-                
-            }
-            .wrapper {
-                flex:1;
-            }
-            .main-header {
-                background-color: #CCC;
-                height: 50px;
-                width: 70%;
-                padding: 5px 15%;
-            }
-            .main-header h1 {
-                line-height: 50px;
-            }
-            .footer {
-                height: 50px;
-                background-color: #CCC;
-            }
-            span.logo {
-                color: blue;
-            }
-            .copyright {
-                color: blue;
-                font-weight: bold;
-                width: 100%;
-                text-align: center;
-                padding: 15px 0;
-            }
-            .box-shadow {
-                box-shadow: inset 0px 0px 50px 0px #ABABAB, 1px 1px 5px 1px #242424;
-                -webkit-box-shadow: inset 0px 0px 50px 0px #ABABAB, 1px 1px 5px 1px #242424;
-                -moz-box-shadow: inset 0px 0px 50px 0px #ABABAB, 1px 1px 5px 1px #242424;
-                -o-box-shadow: inset 0px 0px 50px 0px #ABABAB, 1px 1px 5px 1px #242424;
-            }
-            .content-top {
-                height: 180px;
-                background-color: #CCC;
-                margin: 10px 0;
-            }
 
-            .content-bio {
-                position: relative;
-                background-color: #AAA;
-                width: 70%;
-                max-width:980px;
-                height: 180px;
-                margin: 0 auto;
-            }
-            .content-bio img {
-                width: 150px;
-                height: 170px;
-                margin: 5px 15px 5px 5px;
-            }
-            .bio-text {
-                position: absolute;
-                top: 5px;
-                left: 170px;
-            }
-            .content-bottom {
-                overflow: auto;
-                width: 70%;
-                max-width: 980px;
-                position: relative;
-                margin: 0 auto;
-            }
-            .sidebar {
-                float: left;
-                background-color: #f1f1f1;
-                width: 25%;
-                height: 500px;
-            }
+<title>MCMXCV</title>
 
-            .main-content {
-                float: right;
-                background-color: #aaaaaa;
-                width: 71%;
-                height: 500px;
-                padding: 0 2% 0 2%;
-            }
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./css/masterstyles.css">
+<link rel="icon" href="./images/ying_yang.gif">
 
-            .sidebar-links {
-                background-color: #f1f1f1;
-            }
-            .sidebar-links li {
-                width: 100%;
-                height: 30px;
-                border: 1px solid #CCC;
-                border-top: 1px solid #FFF;
-            }
-            .sidebar-links a {
-                display: block;
-                padding: 7px;
-                text-decoration: none;
-                transition-duration: 0.7s;
-            }
-            .sidebar-links a:hover {
-                background-color: #CCC;
-                color: #000;
-            }
-			.gallery h1 {
-				margin: 30px 0 15px 0;
-			}
-			.gallery ul {
-				list-style-type:none;
-				text-align: center;
-				margin-top: 20px;
-			}
-			.gallery li {
-				margin-right:10px;
-				display:inline;
-
-			}
-			.gallery img {
-				width:125px;
-				height:100px;
-			}
-        </style>
 </head>
+
 <body>
-    <div class="wrapper">
-        <header class="main-header box-shadow">
-            <h1>Lucas Phan</h1>
-        </header>
-        <section class="content-top">
-            <article class="content-bio">
-                <img src="./images/myPic.jpg" alt="my pic">
-                <div class="bio-text">
-                    <h1>My Biography</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, pharetra venenatis erat nisl duis aliquet. Curabitur tellus imperdiet lacus, urna sed mollis
-                        pharetra eleifend doloribus, vehicula maecenas non fusce at sollicitudin erat, metus purus justo
-                        mauris tempus in. Tincidunt et feugiat enim dui lacus, dolor nulla dolor tempor leo maecenas consequat.
-                    </p>
-                </div>
-            </article>
-        </section>
-        <section class="content-bottom">
-            <aside class="sidebar">
-                <ul class="sidebar-links">
-                    <li><a href="http://www.google.com" target="_blank">Google.com</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                </ul>
-            </aside>
-            <article class="main-content">
-                <div class="gallery">
-                    <h1>Gallery</h1>
-                    <ul>
-                        <li><img src="./images/gallery/1.jpg" alt="car"></li>
-                        <li><img src="./images/gallery/2.jpg" alt="car"></li>
-                        <li><img src="./images/gallery/3.jpg" alt="car"></li>
-                        <li><img src="./images/gallery/4.jpg" alt="car"></li>
-                        <li><img src="./images/gallery/5.jpg" alt="car"></li>
-                        <li><img src="./images/gallery/6.jpg" alt="car"></li>
-                        <li><img src="./images/gallery/7.jpg" alt="car"></li>
-                        <li><img src="./images/gallery/8.jpg" alt="car"></li>
-                    </ul>
-                </div>
-            </article>
-        </section>
-    </div>
-    <footer class="footer box-shadow">
-        <p class="copyright">
-            (c) Created by Lucas Phan
-        </p>
-    </footer>
+
+<div class="container">
+
+	<div class="wrapper">
+		
+		<header class="title">
+		
+		</header>
+		
+		<div class="nav">
+		
+			<a href="#">uno</a>
+			<a href="#">deux</a>
+			<a href="#">trois</a>
+			<a href="#">quatre</a>
+			<a href="#">cinq</a>
+			
+		</div>
+		
+		<div class="leftcolumn">
+		
+		</div>
+		
+		<div class="main">
+		
+			<span class="hello">
+			
+				Hello there,
+				
+			</span>
+			
+			<p>
+			
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo sem in hendrerit tincidunt. Vivamus nec viverra sem, et tempor nisi. Duis erat nibh, convallis ac ex non, bibendum blandit neque. Maecenas feugiat lorem eget nisi faucibus gravida. Aliquam id odio accumsan, sollicitudin lorem eu, ornare urna. Donec luctus lacus eget tellus laoreet rutrum. Fusce cursus quam eu dolor maximus faucibus. Praesent tempor nisl est, non cursus neque molestie a. Nam scelerisque ante sit amet laoreet vulputate. Cras iaculis ex id fermentum consequat. Curabitur id hendrerit dolor. Praesent in vestibulum quam.
+			
+			</p>
+			
+			<p>
+			
+				Proin ornare dapibus pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi consequat feugiat quam quis convallis. Duis viverra eros nec pharetra vestibulum. In eleifend convallis purus, ac pharetra odio consequat convallis. Mauris non nisl nec augue semper hendrerit.
+			
+			</p>
+			
+			<p>
+			
+				Curabitur viverra justo quis leo sollicitudin faucibus. Ut rhoncus velit sed mauris sollicitudin, vitae mattis risus dapibus. Nunc eu tellus et tortor consectetur scelerisque id non erat. Duis mattis leo nisl, nec volutpat felis aliquam suscipit. Etiam imperdiet dolor sed mi lacinia, ac laoreet ante tempus. Praesent facilisis odio a ultricies lacinia. Etiam efficitur nisi mauris. Pellentesque lectus nisl, tristique eu accumsan sit amet, venenatis sit amet tellus. Nulla venenatis cursus arcu non vehicula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque magna lectus, fringilla sit amet risus id, efficitur pulvinar purus. Morbi mattis molestie convallis. Curabitur eleifend vel ligula sit amet euismod. Mauris semper quam ut lacus lobortis, a euismod augue posuere.
+				
+			</p>
+			
+			<p>
+			
+				Praesent maximus id libero nec commodo. Vestibulum ex magna, cursus eu sollicitudin ut, porta vitae risus. Nullam at odio rhoncus, vestibulum mi vel, interdum purus. In hac habitasse platea dictumst. In orci est, fringilla vel turpis at, posuere fringilla dolor. Vestibulum fringilla ipsum vitae neque pellentesque consectetur. Duis ut dolor lacus. Phasellus iaculis sapien nisi, eu varius enim tempor eget. Nunc egestas sodales nunc eget finibus. Curabitur vestibulum metus odio, tincidunt tristique purus rhoncus et. Vestibulum vestibulum turpis et nisl pharetra, sed viverra diam efficitur. Pellentesque id libero justo. Duis rhoncus mi in dapibus consectetur.
+				
+			</p>
+			
+			<p>
+			
+				Donec semper justo porta pellentesque ultrices. Aenean ut egestas est. Donec quis laoreet nibh, eu mollis libero. Aliquam vel dignissim dolor. Maecenas auctor quam ligula, vel blandit quam ultricies non. Nulla iaculis mauris varius, ornare elit sit amet, finibus dolor. Cras commodo nulla nec nisl pellentesque tempor. Pellentesque a ex et nulla lacinia porttitor. Nunc justo nisl, cursus et vestibulum at, pulvinar in ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent et laoreet erat. Sed accumsan lectus vitae faucibus rhoncus.
+				
+			</p>
+			
+		</div>
+		
+		<div class="rightcolumn">
+		</div>
+		
+		<footer class="copyright">
+		
+			&copy; Abigail de la Cruz 2017
+			
+		</footer>
+		
+	</div>
+
+</div>
+
 </body>
 </html>
