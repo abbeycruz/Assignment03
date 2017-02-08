@@ -6,9 +6,15 @@
 
 <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="./css/masterstyles.css">
+<link rel="stylesheet" type="text/css" href="./css/masterstyles2.css">
 <link rel="icon" href="./images/ying_yang.gif">
 
+<script type="text/javascript">
+    function clearThis(target){
+        target.value= "";
+    }
+    </script>
+	
 </head>
 
 <body>
@@ -26,171 +32,30 @@
 			<a href="#">uno</a>
 			<a href="#">deux</a>
 			<a href="#">trois</a>
-			<a href="#">quatre</a>
-			<a href="#">cinq</a>
 			
 		</div>
-		
-		<aside class="leftcolumn">
-		
-		</aside>
-		
 		<section class="main">
 		
-			<span class="hello">
+				Welcome.
 			
-				Hello there,
-				
-			</span>
+			<div class="login">
 			
-			<!--<p>
-			
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo sem in hendrerit tincidunt. Vivamus nec viverra sem, et tempor nisi. Duis erat nibh, convallis ac ex non, bibendum blandit neque. Maecenas feugiat lorem eget nisi faucibus gravida. Aliquam id odio accumsan, sollicitudin lorem eu, ornare urna. Donec luctus lacus eget tellus laoreet rutrum. Fusce cursus quam eu dolor maximus faucibus. Praesent tempor nisl est, non cursus neque molestie a. Nam scelerisque ante sit amet laoreet vulputate. Cras iaculis ex id fermentum consequat. Curabitur id hendrerit dolor. Praesent in vestibulum quam.
-			
-			</p>-->
-			
-			<p>
-			
-				Proin ornare dapibus pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi consequat feugiat quam quis convallis. Duis viverra eros nec pharetra vestibulum. In eleifend convallis purus, ac pharetra odio consequat convallis. Mauris non nisl nec augue semper hendrerit.
-			
-			</p>
-			
-			<!--<p>
-			
-				Curabitur viverra justo quis leo sollicitudin faucibus. Ut rhoncus velit sed mauris sollicitudin, vitae mattis risus dapibus. Nunc eu tellus et tortor consectetur scelerisque id non erat. Duis mattis leo nisl, nec volutpat felis aliquam suscipit. Etiam imperdiet dolor sed mi lacinia, ac laoreet ante tempus. Praesent facilisis odio a ultricies lacinia. Etiam efficitur nisi mauris. Pellentesque lectus nisl, tristique eu accumsan sit amet, venenatis sit amet tellus. Nulla venenatis cursus arcu non vehicula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque magna lectus, fringilla sit amet risus id, efficitur pulvinar purus. Morbi mattis molestie convallis. Curabitur eleifend vel ligula sit amet euismod. Mauris semper quam ut lacus lobortis, a euismod augue posuere.
+				<label for="username">Username</label>
+				<input class="user" type="text" id="username">
+				<label for="password">Password</label>
+				<input class="pass" type="password" id="password">
+				<!--<input class="button" type="submit" value="Login" style="float:right;">!-->
+				<button onclick="login()" id="submit" clas="loginbutton" style="float:right;">Login</button>
 				
-			</p>-->
-			
-			
-			
-			<table class="schedule">
+				<div id="error-container">
+					<p id="error-text" class="error-message">
+					</p>
+				</div>
 				
-				<tr class="titles">
-					
-					<th>
-						Course
-					</th>
-					
-					<th>
-						Section
-					</th>
-					
-					<th>
-						Instructor
-					</th>
-					
-					<th>
-						Days
-					</th>
-				
-				</tr>
-				
-				<tr>
-					
-					<th>
-						IS 183
-					</th>
-					
-					<th>
-						Section
-					</th>
-					
-					<th>
-						Phan
-					</th>
-					
-					<th>
-						T/TH
-					</th>
-				
-				</tr>
-				
-				<tr>
-					
-					<th>
-						IS 166
-					</th>
-					
-					<th>
-						Section
-					</th>
-					
-					<th>
-						Rahmatian
-					</th>
-					
-					<th>
-						T/TH
-					</th>
-				
-				</tr>
-				
-				<tr>
-					
-					<th>
-						IS 181
-					</th>
-					
-					<th>
-						Section
-					</th>
-					
-					<th>
-						Canelon
-					</th>
-					
-					<th>
-						T/TH
-					</th>
-				
-				</tr>
-				
-				<tr>
-					
-					<th>
-						IS 186
-					</th>
-					
-					<th>
-						Section
-					</th>
-					
-					<th>
-						Wielicki
-					</th>
-					
-					<th>
-						M/W
-					</th>
-				
-				</tr>
-				
-				<tr>
-					
-					<th>
-						MKTG 100S
-					</th>
-					
-					<th>
-						Section
-					</th>
-					
-					<th>
-						Harris
-					</th>
-					
-					<th>
-						T
-					</th>
-				
-				</tr>
-			
-			</table>
-			
+			</div>
+</form>
 		</section>
 		
-		<aside class="rightcolumn">
-		</aside>
 		
 		<footer class="copyright">
 		
@@ -201,6 +66,32 @@
 	</div>
 
 </div>
+
+<script>
+	function login ()
+		{
+			let username = document.getElementById('username').value;
+			let password = document.getElementById('password').value;
+			let errorContainer = document.getElementById('error-container');
+			let errorText = document.getElementById('error-text');
+	if(username == 'abbey' && password == 'cruz')
+		{
+			location.href='./home/home.html'
+		}
+	else
+		{
+			errorContainer.style.display = 'block';
+			errorText.style.display = 'block';
+			errorText.innerHTML = 'Error, please try again.';
+			
+			let handle = setInterval(() =>
+			{
+			errorContainer.style.display = 'none';
+			clearInterval(handle);
+			},2000);
+		}
+		}
+</script>
 
 </body>
 </html>

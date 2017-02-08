@@ -26,11 +26,11 @@ body
     position:absolute;
 	left:50%;
 	top:50%;
-	margin:-250px 0 0 -440px;
+	margin:-250px 0 0 -200px;
 	background-color:rgba(255,255,255,0.3);
 	border:1px solid #D3D3D3;
-	width:880px;
-	height:495px;
+	width:370px;
+	height:405px;
 }
 .title
 {
@@ -42,24 +42,17 @@ body
 }
 .nav
 {
-	width:690px;
+	width:340px;
 	height:20px;
 	padding:5px;
 	text-align:center;
 	word-spacing:60px;
 	margin:auto;
 }
-.leftcolumn
-{
-	background-image:url('../images/koi-resized.png');
-	width:180px;
-	height:340px;
-	float:left;
-}
 .main
 {
-	width:510px;
-	height:330px;
+	width:360px;
+	height:240px;
 	overflow-y:scroll;
 	overflow-x:hidden;
 	float:left;
@@ -69,17 +62,10 @@ body
 	text-align:center;
 	font-family: 'Mr Dafoe', cursive;
 }
-.rightcolumn
-{
-	background-image:url('../images/koi-resized2.png');
-	width:180px;
-	height:340px;
-	float:left;
-}
 .copyright
 {
 	clear:both;
-	width:870px;
+	width:360px;
 	height:15px;
 	padding:5px;
 	text-align:center;
@@ -94,52 +80,39 @@ a:hover
 	text-decoration:none;
 	font-weight:bold;
 }
-p
+h1
 {
-	margin:0;
-	padding:5px;
+	font-size:14px;
+	font-weight:bold;
 }
-/*.hello
-{
-	margin:0 auto;
-	font-family: 'Mr Dafoe', cursive;
-	font-size:30px;
-
-}*/
 .login
 {
 	margin: 0 auto;
-	text-align:center;
+	text-align:left;
 	width:210px;
 	padding:10px;
 	font-family: 'Nunito', sans-serif;
-	font-size:14px;
+	font-size:16px;
 }
-.user
+label
+{
+	font-size:12px;
+}
+.user, .pass
 {
 	margin:5px;
 	padding:5px;
 	height:15px;
-	border-radius:10px;
+	border-radius:5px;
 	font-family: 'Nunito', sans-serif;
 	font-size:12px;
 	width:190px;
 }
-.pass
+#submit
 {
-	margin:5px;
-	padding:5px;
-	height:15px;
-	border-radius:10px;
-	font-family: 'Nunito', sans-serif;
-	font-size:12px;
-	width:190px;
-}
-input[type=submit]
-{
-	padding:5px; 
+	padding:3px; 
 	border:1px solid black;
-	height:30px;
+	height:24px;
     cursor:pointer;
 	background-color:transparent;
     -webkit-border-radius: 5px;
@@ -147,3 +120,28 @@ input[type=submit]
 	font-family: 'Nunito', sans-serif;
 	font-size:12px;
 }
+p.error-message
+{
+	margin-top:30px;
+	padding:5px;
+	width:100%;
+	background-color:#D3D3D3;
+	color:#000;
+	border:1px solid #000;
+	border-radius:5px;
+	display:none;
+	height:15px;
+	font-size:12px;
+}
+/*input[type=submit]
+{
+	padding:3px; 
+	border:1px solid black;
+	height:24px;
+    cursor:pointer;
+	background-color:transparent;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+	font-family: 'Nunito', sans-serif;
+	font-size:12px;
+}*/
